@@ -1,6 +1,4 @@
 return {
-	{ 'kepano/flexoki-neovim', name = 'fleoxki'},
-	{
 		"nvim-neo-tree/neo-tree.nvim",
 		branch = "v3.x",
 		dependencies = {
@@ -9,5 +7,5 @@ return {
 			"MunifTanjim/nui.nvim",
 			"3rd/image.nvim",
 		}
-	}
 }
+
