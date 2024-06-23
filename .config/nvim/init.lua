@@ -11,7 +11,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("options")
+require("config.options")
 require("lazy").setup("plugins")
 
 local builtin = require("telescope.builtin")
@@ -24,6 +24,5 @@ vim.api.nvim_create_autocmd("VimEnter", {
 		vim.cmd("Neotree")
 	end
 })
-
 
 vim.cmd('colorscheme flexoki-dark')
