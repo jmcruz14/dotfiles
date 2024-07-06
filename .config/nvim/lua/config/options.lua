@@ -1,6 +1,7 @@
 local opts=vim.opt
 local g = vim.g
 ---- OPTIONS -----
+opts.background="dark"
 opts.showmatch=false
 opts.ignorecase=true
 opts.hlsearch=true

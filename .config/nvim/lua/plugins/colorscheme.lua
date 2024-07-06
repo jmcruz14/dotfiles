@@ -1,6 +1,9 @@
 return {
   {
     "drewtempelmeyer/palenight.vim",
-    lazy = true,
-  }
+		-- lazy = true,
+  },
+{
+	 'kepano/flexoki-neovim', name = 'fleoxki'
 }
+	}
