@@ -49,7 +49,6 @@ return {
 				}
 			}
 		})
-		vim.keymap.set('n', 'm', ':Neotree<CR>', {})
+		vim.keymap.set('n', '<leader>m', ':Neotree toggle<CR>', {})
 	end
 }
-

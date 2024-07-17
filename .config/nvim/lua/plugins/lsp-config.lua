@@ -45,8 +45,19 @@ return {
 				},
 				capabilities = capabilities
 			})
-			-- vim.keymap.set('n', '<Tab>', vim.lsp.buf.hover, {})
+
+			vim.keymap.set('n', '<Tab>', vim.lsp.buf.hover, {})
 			vim.keymap.set({ 'n', 'v' }, '<leader>ca', vim.lsp.buf.code_action, {})
+		end
+	},
+	{
+		"https://git.sr.ht/~whynothugo/lsp_lines.nvim",
+		config = function ()
+			vim.diagnostic.config({
+				virtual_text = false
+			})
+			require("lsp_lines").setup()
+			vim.keymap.set('n', '<Leader>l', require("lsp_lines").toggle, { desc = "Toggle lsp_lines" })
 		end
 	}
 }
