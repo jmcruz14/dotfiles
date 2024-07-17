@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# Find way to ensure the install file is only activated FROM the user's dotfiles directory
-
 SOURCE_DIR="$HOME/dotfiles/.config/nvim"
 DEST_DIR="$HOME/.config/nvim"
 
